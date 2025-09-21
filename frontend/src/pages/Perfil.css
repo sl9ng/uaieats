@@ -1,0 +1,120 @@
+/* src/pages/Perfil.css */
+
+.perfil-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.perfil-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.perfil-card h1 {
+  font-size: 1.8rem;
+  color: #ff6200;
+  margin-bottom: 10px;
+}
+
+.perfil-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.perfil-card .perfil-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.perfil-card .perfil-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* --- FORMULÁRIO DE EDIÇÃO --- */
+
+.perfil-card .form-group {
+  display: flex; flex-direction: column; gap: 5px; width: 100%;
+}
+.perfil-card .form-group label {
+  font-weight: 600; color: #555; font-size: 0.9rem;
+}
+.perfil-card .form-group input {
+  padding: 10px; border: 1px solid #ccc; border-radius: 8px;
+  font-size: 1rem; width: 100%; box-sizing: border-box;
+}
+.perfil-card .form-group input:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+/* --- BOTÕES --- */
+.perfil-card .form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.perfil-card button {
+  padding: 10px 20px; border: none; border-radius: 8px;
+  font-weight: 600; cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.perfil-card .btn-save { background-color: #28a745; color: white; }
+.perfil-card .btn-save:hover { background-color: #218838; }
+.perfil-card .btn-cancel { background-color: #6c757d; color: white; }
+.perfil-card .btn-cancel:hover { background-color: #5a6268; }
+
+/* --- LISTA DE CARTÕES --- */
+.card-list {
+  margin-top: 10px; display: flex; flex-direction: column; gap: 10px;
+}
+.card-list-item {
+  display: flex; justify-content: space-between; align-items: center;
+  background-color: #f8f9fa; padding: 10px 15px;
+  border-radius: 8px; border: 1px solid #dee2e6;
+  font-size: 0.95rem;
+}
+.card-list-item span:first-child { font-weight: 500; color: #333; }
+.btn-cartao, .btn-compras {
+  background-color: #007bff; color: white; margin-top: 5px;
+  align-self: flex-start;
+}
+.btn-cartao:hover, .btn-compras:hover { background-color: #0056b3; }
+
+/* --- MODAL DE SENHA --- */
+.password-modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+}
+.password-modal-content {
+  background: white; padding: 30px; border-radius: 12px;
+  width: 90%; max-width: 450px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex; flex-direction: column; gap: 15px;
+}
+.password-modal-content h2 {
+  margin-top: 0; color: #ff6200;
+}
+.error-message {
+  color: #dc3545; font-size: 0.9rem; text-align: center;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 500px) {
+  .perfil-container { margin: 20px; padding: 15px; }
+  .perfil-card { padding: 20px; }
+  .perfil-card h1 { font-size: 1.5rem; }
+}

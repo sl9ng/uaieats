@@ -1,0 +1,126 @@
+/* src/pages/admin/AdminUserList.css */
+
+.user-list-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #ff6200;
+    color: white;
+    font-weight: 600;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.status-active, .status-inactive {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.status-active {
+    background-color: #28a745; 
+}
+
+.status-inactive {
+    background-color: #6c757d; 
+}
+
+.actions-cell {
+    display: flex;
+    gap: 8px;
+}
+
+.activate-button, .deactivate-button {
+    padding: 6px 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.activate-button {
+    background-color: #28a745;
+}
+.activate-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.deactivate-button {
+    background-color: #ffc107; 
+    color: #212529;
+}
+.deactivate-button:hover:not(:disabled) {
+    background-color: #e0a800;
+}
+
+.delete-button {
+    padding: 6px 12px;
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover:not(:disabled) {
+    background-color: #c82333;
+}
+
+.delete-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+}

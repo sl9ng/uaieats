@@ -1,0 +1,129 @@
+/* frontend/src/pages/Cart.css */
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.cart-sidebar {
+  width: 400px;
+  max-width: 90%;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px 0 0 8px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cart-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ff6200;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #ff6200;
+}
+
+.cart-items-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.cart-item-actions button {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.cart-item-actions button:hover {
+  background: #ffefe6;
+  border-color: #ff6200;
+}
+
+.cart-total {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 2px solid #333;
+}
+
+.cart-total h4 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #e05500;
+}
+
+.cart-footer {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}

@@ -1,0 +1,11 @@
+/* src/components/AdminLayout.css */
+.admin-layout {
+    display: flex;
+    background-color: #f8f9fa; 
+}
+.admin-content {
+    margin-left: 250px; 
+    width: calc(100% - 250px);
+    padding: 30px;
+    min-height: 100vh;
+}

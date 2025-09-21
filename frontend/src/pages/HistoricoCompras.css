@@ -1,0 +1,38 @@
+/* src/pages/HistoricoCompras.css */
+.historico-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.historico-container.error {
+    color: red;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.order-item h3 {
+    margin-top: 0;
+}
+
+.order-details h4 {
+    margin-bottom: 5px;
+}
+
+.order-details ul {
+    margin: 0;
+    padding-left: 20px;
+}
